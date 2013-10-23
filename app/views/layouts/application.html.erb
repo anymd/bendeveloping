@@ -1,28 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8">
     <title><%= content_for?(:title) ? yield(:title) : "Ben Developing" %></title>
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag "application", :media => "all" %>
     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
-    </head>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  </head>
 
 <body>
 
-<div class="container">
-  <nav>
-    <%= link_to 'Ben Developing', root_path, :class => 'brand' %>
-  </nav>
+  <div class="header">
+    <h1><%= link_to '#bendeveloping', root_path, :class => 'brand' %></h1>
+  </div>
 
-<%= yield %>
-  <footer>
-    <p>&copy; Bendeveloping 2013</p>
-  </footer>
+  <div class="container">
 
-</div>
+    <div class="eleven columns content">  
+      <%= yield %>
+    </div>
 
-    <%= javascript_include_tag "application" %>
+    <div class="four columns nav offset-by-one">
+      <div class="profile"><%= image_tag 'ben.jpg', :class => 'profile-image' %></div>
+      <ul class="links">
+        <li><h4>Ben Feldman</h4>Oakland, CA USA</li>
+        <li>Full stack web developer specializing in Ruby, Rails, javascript & jQuery; former product manager.</li>
+        <li><i class="icon-fixed-width icon-comment"></i><%= link_to 'my story', '#' %></li>
+        <li><i class="icon-fixed-width icon-file-text-alt"></i><%= link_to 'résumé', '#' %></li>
+        <li><i class="icon-fixed-width icon-desktop"></i><%= link_to 'projects', '#' %></li>
 
-  </body>
+        <li><i class="icon-fixed-width icon-twitter"></i><%= link_to '@bendeveloping', 'http://twitter.com/bendeveloping' %></li>
+        <li><i class="icon-fixed-width icon-github-alt"></i><%= link_to 'github/anymd', 'http://github.com/anymd' %></li>
+        <li><i class="icon-fixed-width icon-linkedin-sign"></i><%= link_to 'linkedIn', 'http://linkedin.com/in/benfeldman' %></li>
+      </ul>
+    </div>
+    
+    <footer>
+      <p>&copy; Ben Developing 2013 | built with Rails 4</p>
+    </footer>
+
+  </div>
+
+  <%= javascript_include_tag "application" %>
+
+</body>
+
 </html>
