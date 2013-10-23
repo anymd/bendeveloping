@@ -4,3 +4,5 @@ class ChangeBodyType < ActiveRecord::Migration
     add_column :posts, :body, :text
   end
 end
+
+
