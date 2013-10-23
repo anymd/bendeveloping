@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate, :except => [ :index, :show ]
 
   def index
     @posts = Post.order("created_at DESC")
@@ -59,4 +60,10 @@ class PostsController < ApplicationController
     def post_params
       params.require(:post).permit(:title, :body)
     end
+
+    def authenticate
+      authenticate_or_request_with_http_basic do |name, password|
+        name == ENV["USERNAME"] && password == ENV["PASSWORD"]
+      end
+    end 
 end
