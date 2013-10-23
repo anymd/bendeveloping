@@ -1,6 +1,6 @@
 Bendeveloping::Application.routes.draw do
 
-  root :to => "posts#index"
+  root :to => "pages#index"
   
   resources :posts
 
