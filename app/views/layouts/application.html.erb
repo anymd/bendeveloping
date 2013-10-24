@@ -9,7 +9,7 @@
     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700' rel='stylesheet' type='text/css'>
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">
   </head>
 
 <body>
@@ -29,13 +29,14 @@
       <ul class="links">
         <li><h4>Ben Feldman</h4>Oakland, CA USA</li>
         <li>Full stack web developer specializing in Ruby, Rails, javascript & jQuery; former product manager.</li>
-        <li><i class="icon-fixed-width icon-comment"></i><%= link_to 'my story', '#' %></li>
-        <li><i class="icon-fixed-width icon-file-text-alt"></i><%= link_to 'résumé', '#' %></li>
-        <li><i class="icon-fixed-width icon-desktop"></i><%= link_to 'projects', '#' %></li>
+        <li><i class="fa fa-asterisk fa-fw"></i><%= link_to 'blog', root_path %></li>
+        <li><i class="fa fa-comment fa-fw"></i><%= link_to 'background', background_path %></li>
+        <li><i class="fa fa-file-text-o fa-fw"></i><%= link_to 'résumé', resume_path %></li>
+        <li><i class="fa fa-desktop fa-fw"></i><%= link_to 'projects', projects_path %></li>
 
-        <li><i class="icon-fixed-width icon-twitter"></i><%= link_to '@bendeveloping', 'http://twitter.com/bendeveloping' %></li>
-        <li><i class="icon-fixed-width icon-github-alt"></i><%= link_to 'github/anymd', 'http://github.com/anymd' %></li>
-        <li><i class="icon-fixed-width icon-linkedin-sign"></i><%= link_to 'linkedIn', 'http://linkedin.com/in/benfeldman' %></li>
+        <li><i class="fa fa-twitter fa-fw"></i><%= link_to '@bendeveloping', 'http://twitter.com/bendeveloping' %></li>
+        <li><i class="fa fa-github-alt fa-fw"></i><%= link_to 'github/anymd', 'http://github.com/anymd' %></li>
+        <li><i class="fa fa-linkedin-square fa-fw"></i><%= link_to 'linkedIn', 'http://linkedin.com/in/benfeldman' %></li>
       </ul>
     </div>
     

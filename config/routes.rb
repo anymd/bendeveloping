@@ -4,6 +4,10 @@ Bendeveloping::Application.routes.draw do
   
   resources :posts
 
+  get "resume",   :to => "pages#resume"
+  get "background",    :to => "pages#background"
+  get "projects", :to => "pages#projects"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
