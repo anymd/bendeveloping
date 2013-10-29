@@ -4,8 +4,9 @@ Bendeveloping::Application.routes.draw do
   
   resources :posts
   resources :messages
+  resources :sessions
 
-  get 'login', :controller => 'sessions', :action => 'create'
+  get 'login', :controller => 'sessions', :action => 'new'
   get 'logout', :controller => 'sessions', :action => 'destroy'
 
   get "resume",   :to => "pages#resume"

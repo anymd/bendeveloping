@@ -3,9 +3,14 @@ class SessionsController < ApplicationController
   end
 
   def create
-    session[:password] = params[:password]
-    flash[:notice] = "Successfully logged in"
-    redirect_to root_path
+    if params[:password] == ENV["BLOG_PASSWORD"]
+      session[:password] = params[:password]
+      flash[:notice] = "Successfully logged in"
+      redirect_to root_path
+    else
+      flash[:error] = "Incorrect password"
+      render "new"
+    end
   end
   
   def destroy

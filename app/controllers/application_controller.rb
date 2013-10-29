@@ -16,7 +16,7 @@ class ApplicationController < ActionController::Base
   end
 
   def admin?
-    false
+    session[:password] == ENV["BLOG_PASSWORD"]
   end
 
 end
