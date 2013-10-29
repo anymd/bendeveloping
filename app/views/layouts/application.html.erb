@@ -20,6 +20,10 @@
 
   <div class="container">
 
+<% if flash[:notice] %>
+  <p class="thanks close"><i class="fa fa-times-circle"></i> <%= flash[:notice] %></p>
+<% end %>
+
     <div class="eleven columns content">  
       <%= yield %>
     </div>
