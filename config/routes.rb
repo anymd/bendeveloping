@@ -5,8 +5,8 @@ Bendeveloping::Application.routes.draw do
   resources :posts
   resources :messages
 
-  # get 'login', :controller => 'sessions', :action => 'create'
-  # get 'logout', :controller => 'sessions', :action => 'destroy'
+  get 'login', :controller => 'sessions', :action => 'create'
+  get 'logout', :controller => 'sessions', :action => 'destroy'
 
   get "resume",   :to => "pages#resume"
   get "background",    :to => "pages#background"

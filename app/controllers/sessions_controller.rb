@@ -4,13 +4,13 @@ class SessionsController < ApplicationController
 
   def create
     session[:password] = params[:password]
-    flash[:notice] = &rsquo;Successfully logged in&rsquo;
-    redirect_to home_path
+    flash[:notice] = "Successfully logged in"
+    redirect_to root_path
   end
   
   def destroy
     reset_session
-    flash[:notice] = &rsquo;Successfully logged out&rsquo;
+    flash[:notice] = "Successfully logged out"
     redirect_to login_path
   end
 end
