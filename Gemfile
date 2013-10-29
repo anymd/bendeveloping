@@ -13,6 +13,7 @@ gem 'unicorn'
 gem 'active_attr'
 
 gem 'twitter'
+gem 'rails_autolink'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'

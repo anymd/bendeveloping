@@ -12,4 +12,8 @@ module ApplicationHelper
     @tweet = tweets.first
   end
 
+  def scrub_upto_hashtag(text)
+    text.gsub(/\s#upto/, "")
+  end
+
 end

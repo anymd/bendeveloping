@@ -18,7 +18,8 @@
     <h1><%= link_to '#bendeveloping', root_path, :class => 'brand' %></h1>
   </div>
   <div class="upto">
-    <i class="fa fa-twitter"></i> <b>What I'm up to</b>  <i>"<%= get_tweet.text %>"</i>
+    <i class="fa fa-twitter"></i> <b>What I'm up to</b>  
+      <i>"<%= auto_link(scrub_upto_hashtag(get_tweet.text).html_safe) %>"</i>
   </div>
   <% if admin? %>
     <div class="admin">
