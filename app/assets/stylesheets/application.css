@@ -153,19 +153,29 @@ footer {
   border: 0px;
 }
 
-.company {
-}
-
 .company div {
   display: inline-block;
 }
 
-.date {
+.date, .download-resume {
   font-weight: bold;
   display: inline;
   float: right;
   position: relative;
   top: 6px;
+}
+
+.download-resume {
+  top: 2px;
+}
+
+.resume h2 {
+  display: inline;
+}
+
+.resume {
+  padding-bottom: 5px;
+  border-bottom: 1px dotted grey;
 }
 
 .job-title {
@@ -183,6 +193,8 @@ footer {
   padding: 10px;
   vertical-align: top;
 }
+
+
 
 //
 
