@@ -17,12 +17,17 @@
   <div class="header">
     <h1><%= link_to '#bendeveloping', root_path, :class => 'brand' %></h1>
   </div>
+  <div class="upto">
+    <i class="fa fa-twitter"></i> <b>What I'm up to</b>  <i>"<%= get_tweet.text %>"</i>
+  </div>
 
   <div class="container">
 
 <% if flash[:notice] %>
   <p class="thanks close"><i class="fa fa-times-circle"></i> <%= flash[:notice] %></p>
 <% end %>
+
+
 
     <div class="eleven columns content">  
       <%= yield %>
