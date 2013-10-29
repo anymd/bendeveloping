@@ -1,8 +1,10 @@
+
+
 <% @posts.each do |post| %>
   <div class="post">
     <h3><%= link_to post.title, post %></h3>
     <p><%= display_date(post.created_at) %></p>
-    <p><%= post.body %></p>
+    <p><%= post.body.html_safe %></p>
   </div>
 <% end %>
 
