@@ -2,9 +2,12 @@
 <div class="page-header">
   <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
 </div>
-<table class="table table-striped">
+
+<%= button_to 'New Post', new_post_path, :method => :get %>
+
+<table class="table">
   <thead>
-    <tr>t
+    <tr>
       <th><%= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:title) %></th>
       <th><%= model_class.human_attribute_name(:body) %></th>
@@ -33,6 +36,4 @@
   </tbody>
 </table>
 
-<%= link_to t('.new', :default => t("helpers.links.new")),
-            new_post_path,
-            :class => 'btn btn-primary' %>
+

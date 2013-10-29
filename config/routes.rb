@@ -13,6 +13,7 @@ Bendeveloping::Application.routes.draw do
   get "background",    :to => "pages#background"
   get "projects", :to => "pages#projects"
 
+  match ':not_found' => 'pages#index', :constraints => { :not_found => /.*/ }, :via => 'get'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -20,6 +20,11 @@
   <div class="upto">
     <i class="fa fa-twitter"></i> <b>What I'm up to</b>  <i>"<%= get_tweet.text %>"</i>
   </div>
+  <% if admin? %>
+    <div class="admin">
+      <%= link_to 'logout', logout_path %>
+    </div>
+  <% end %>
 
   <div class="container">
 
