@@ -1,4 +1,6 @@
-
+<% if flash.notice %>
+  <div class="thanks"><%= flash.notice %></div>
+<% end %>
 
 <% @posts.each do |post| %>
   <div class="post">

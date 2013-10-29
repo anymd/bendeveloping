@@ -10,6 +10,8 @@ gem 'rails_12factor', group: :production
 
 gem 'unicorn'
 
+gem 'active_attr'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
