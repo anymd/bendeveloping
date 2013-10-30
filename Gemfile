@@ -14,6 +14,7 @@ gem 'active_attr'
 
 gem 'twitter'
 gem 'rails_autolink'
+gem 'has_permalink'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
