@@ -4,6 +4,10 @@ module ApplicationHelper
     date.strftime("%B %-d, %Y")
   end
 
+  def post_date(date)
+    date.strftime("%m/%-d/%Y %l:%M %P")
+  end
+
   def get_tweet
     tweets = []
     Twitter.user_timeline("bendeveloping").each do |tweet|

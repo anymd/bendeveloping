@@ -10,7 +10,6 @@
     <tr>
       <th><%= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:title) %></th>
-      <th><%= model_class.human_attribute_name(:body) %></th>
       <th><%= model_class.human_attribute_name(:permalink) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
@@ -21,9 +20,8 @@
       <tr>
         <td><%= link_to post.id, post_path(post) %></td>
         <td><%= post.title %></td>
-        <td><%= post.body %></td>
         <td><%= post.permalink %></td>        
-        <td><%=l post.created_at %></td>
+        <td><%= post_date(post.created_at) %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_post_path(post), :class => 'btn btn-mini' %>
