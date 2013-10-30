@@ -17,3 +17,18 @@
     <%= link_to t('.cancel', :default => t("helpers.links.cancel")), posts_path, :class => 'btn' %>
   </div>
 <% end %>
+
+
+<div class="gist-admin">
+  <p><b>Use this code to embed a gist</b></p>
+<%= text_area_tag 'gist', 
+"<p class='gist'>If the gist code does not appear below this sentence, please refresh your browser or visit the following link:</p><p><a href='
+https://gist.github.com/anymd/7209832
+'>
+https://gist.github.com/anymd/7209832
+</a></p> <p><script src='
+https://gist.github.com/anymd/7209832
+.js'></script></p>", :size => "70x10" %>
+</div>
+
+
