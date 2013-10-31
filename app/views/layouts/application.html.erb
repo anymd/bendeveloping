@@ -34,15 +34,15 @@
 
 <div class="container">
 
-<% if flash[:notice] %>
-  <p class="thanks close"><i class="fa fa-times-circle"></i> <%= flash[:notice] %></p>
-<% end %>
-<% if flash[:error] %>
-  <p class="error close"><i class="fa fa-times-circle"></i> <%= flash[:error] %></p>
-<% end %>
-
-
     <div class="eleven columns content">  
+
+      <% if flash[:notice] %>
+        <p class="thanks close"><i class="fa fa-times-circle"></i> <%= flash[:notice] %></p>
+      <% end %>
+      <% if flash[:error] %>
+        <p class="error close"><i class="fa fa-times-circle"></i> <%= flash[:error] %></p>
+      <% end %>
+
       <%= yield %>
     </div>
 
