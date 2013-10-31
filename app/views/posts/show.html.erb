@@ -1,11 +1,6 @@
 <%- model_class = Post -%>
 
-<div class="post">
-  <h3><%= link_to @post.title, @post %></h3>
-  <p><%= display_date(@post.created_at) %></p>
-  <p><%= @post.body.html_safe %></p>
-</div>
-
+<%= render "posts/post" %>
 
 <div class="form-actions">
   <%= link_to 'Back', root_path, :class => 'btn'  %>
