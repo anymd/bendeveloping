@@ -58,6 +58,11 @@
   
   </div>
 
+<div class="upto">
+  <i class="fa fa-twitter fa-lg"></i>&nbsp;&nbsp;<b>WHAT I'M UP TO: </b>&nbsp;&nbsp;  
+  <%= auto_link(scrub_upto_hashtag(get_tweet.text).html_safe) %>
+</div>
+
 <footer>
   <p>&copy; 2013 Ben Developing | Built with Rails 4</p>
 </footer>

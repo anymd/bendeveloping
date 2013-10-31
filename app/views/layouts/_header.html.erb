@@ -1,10 +1,15 @@
 <div class="header">
-  <h2><%= link_to '#bendeveloping', root_path, :class => 'brand' %></h2>
+  <h2><%= link_to 'bendeveloping', root_path, :class => 'brand' %></h2>
 </div>
 
-<div class="upto">
-  <i class="fa fa-twitter fa-lg"></i>&nbsp;&nbsp;<b>WHAT I'M UP TO: </b>&nbsp;&nbsp;  
-  <%= auto_link(scrub_upto_hashtag(get_tweet.text).html_safe) %>
+<div class="header-nav">
+  <ul>
+    <li><%= link_to 'blog', root_path %> </li>
+    <li><%= link_to 'résumé', resume_path %></li>
+    <li><%= link_to 'about me', background_path %></li>  
+    <li><%= link_to 'projects', projects_path %></li> 
+    <li><%= link_to 'contact', new_message_path %></li>        
+  </ul>    
 </div>
 
 <% if admin? %>

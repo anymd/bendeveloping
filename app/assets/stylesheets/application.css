@@ -16,16 +16,17 @@ body {
   background-color: white;
 }
 
+.brand {
+  font-family: Open Sans !important;
+  font-weight: bold;
+}
+
 .content {
   margin-top: 20px;
 }
 
 b {
   font-weight: bold !important;
-}
-
-i {
-  font-style: italic !important;
 }
 
 .bullets {
@@ -38,8 +39,27 @@ i {
   margin-left: 30px;
 }
 
-.nav li {
+.header-nav {
+  background-color: #F5F5F5;
+  border-bottom: 1px solid #edeaea; 
+  padding-left: 12px; 
+  margin-bottom: 20px;
+}
 
+.header-nav ul {
+  list-style-type:none;
+  margin:0;
+  padding:5px;
+}
+
+.header-nav ul li {
+  display:inline;
+  padding: 10px;
+}
+
+.header-nav li a {
+  color: #474747;
+  font-family: arial;
 }
 
 .nav {
@@ -52,7 +72,7 @@ i {
 
 .links a, .links a:visited, .fa-fw {
   font-weight: bold;
-  color: green;
+  color: #0b96bc;
 }
 
 .links a {
@@ -61,6 +81,10 @@ i {
 
 .links li {
   margin-left: 10px;
+}
+
+.links li:nth-child(2) {
+  margin-bottom: 15px;
 }
 
 .post {
@@ -81,6 +105,10 @@ div .post:last-child {
   margin: 0px;
 }
 
+.header h2 {
+  color: white;
+}
+
 .header a {
   font-size: 1.4em;
   color: #f2f2f2 !important;
@@ -96,13 +124,15 @@ div .post:last-child {
   color: white;
   background-color: #474747;
   padding: 20px;
-
 }
 
 .upto {
-  background-color: #777777;
+  text-align: center;
+  background-color: #999;
   padding: 5px 20px;
   color: white;
+  z-index: 1;
+  width: 100%;
 }
 
 .upto a {
@@ -122,7 +152,7 @@ div .post:last-child {
 
 footer {
   clear: both;
-  margin-top: 20px !important;
+  text-align: center;
   background-color: grey;
   color: white;
   padding: 55px !important;
@@ -330,8 +360,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 /* Links
 ================================================== */
 
-  a, a:visited { color: green; text-decoration: none; outline: 0; -webkit-transition: color 0.3s ease-out 0s; -moz-transition: color 0.3s ease-out 0s; -o-transition: color 0.3s ease-out 0s; transition: color 0.3s ease-out 0s;  }
-  a:hover, a:focus { color: green; text-decoration: none; border-bottom: 1px dotted green;}
+  a, a:visited { color: #0b96bc; text-decoration: none; outline: 0; -webkit-transition: color 0.3s ease-out 0s; -moz-transition: color 0.3s ease-out 0s; -o-transition: color 0.3s ease-out 0s; transition: color 0.3s ease-out 0s;  }
+  a:hover, a:focus { color: #0b96bc; text-decoration: none; border-bottom: 1px dotted #0b96bc;}
   p a, p a:visited { line-height: inherit; }
 
 
@@ -437,7 +467,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   }
 
   .thanks i {
-    color: green;
+    color: #0b96bc;
   }
 
   .error { 
