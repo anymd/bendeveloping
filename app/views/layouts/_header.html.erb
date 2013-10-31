@@ -1,0 +1,14 @@
+<div class="header">
+  <h2><%= link_to '#bendeveloping', root_path, :class => 'brand' %></h2>
+</div>
+
+<div class="upto">
+  <i class="fa fa-twitter fa-lg"></i>&nbsp;&nbsp;<b>WHAT I'M UP TO: </b>&nbsp;&nbsp;  
+  <%= auto_link(scrub_upto_hashtag(get_tweet.text).html_safe) %>
+</div>
+
+<% if admin? %>
+  <div class="admin">
+    <%= link_to 'logout', logout_path %>
+  </div>
+<% end %>

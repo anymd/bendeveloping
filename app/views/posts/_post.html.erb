@@ -1,5 +1,5 @@
 <div class="post">
-  <h3><%= link_to @post.title, @post %></h3>
+  <h2><%= link_to @post.title, @post %></h2>
   <p><b><%= display_date(@post.created_at) %></b></p>
   <p><%= @post.body.html_safe %></p>
 </div>
