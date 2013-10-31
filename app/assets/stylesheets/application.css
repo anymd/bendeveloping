@@ -26,6 +26,10 @@ body {
   margin-left: 0px
 }
 
+.bullets li {
+  margin-left: 30px;
+}
+
 .nav li {
 
 }
@@ -50,6 +54,8 @@ body {
 .links li {
   margin-left: 10px;
 }
+
+
 
 .post {
   border-bottom: 1px dotted black;
