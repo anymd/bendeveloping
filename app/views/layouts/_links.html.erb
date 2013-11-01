@@ -2,6 +2,11 @@
   <li><h4>Ben Feldman</h4>Oakland, CA USA</li>
   <li>Full stack web developer specializing in Ruby, Rails, javascript & jQuery; former product manager.</li>
   <li>
-    <%= link_to raw("<i class='fa fa-twitter fa-2x'></i>"), 'http://twitter.com/bendeveloping' %> <%= link_to raw("<i class='fa fa-github fa-2x'></i>"), 'http://github.com/anymd' %> <%= link_to raw("<i class='fa fa-linkedin fa-2x'></i>"), 'http://linkedin.com/in/benfeldman' %>
+    <%= link_to raw("<i class='fa fa-twitter-square fa-2x'></i>"), 'http://twitter.com/bendeveloping' %> <%= link_to raw("<i class='fa fa-github-square fa-2x'></i>"), 'http://github.com/anymd' %> <%= link_to raw("<i class='fa fa-linkedin-square fa-2x'></i>"), 'http://linkedin.com/in/benfeldman' %>
   </li>
+  <li><div class="upto-sidebar">
+  <i class="fa fa-twitter fa-lg"></i> <b>WHAT I'M UP TO</b><br>
+  <%= auto_link(scrub_upto_hashtag(get_tweet.text).html_safe) %>
+</div></li>
 </ul>
+
