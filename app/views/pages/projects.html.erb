@@ -1,1 +1,50 @@
-Projects
+<h1>My Projects</h1>
+
+<p></p>
+<hr>
+<h3>Affiliated</h3>
+
+<p>A Rails 4 app I built for a client that allows publishers and marketers to haggle over commission prices with online sellers.  It's an affiliate program that includes a store and integrates with Dwolla payments.  The app is an MVP in order to test out the concept with a few of their clients.  I changed the name of the app and gitignored the config folder so I could put it on Github for prospective employers.</p>
+<i class='fa fa-external-link fa-1x'></i>
+<%= link_to "app", "https://affiliated.heroku.com", :class => "project-link" %>
+<i class='fa fa-github-square fa-1x'></i>
+<%= link_to "code", "https://github.com/anymd/affiliated", :class => "project-link"  %>
+<p>Gems: bootstrap, devise, dwolla, filepicker, postgres, sass, coffeescript, jquery, rails 4</p>
+<hr>
+
+<h3>StaleMikes</h3>
+<p>A Rails app and free web service I built that allows communities of working comedians to maintain a list of active comedy shows they can pursue for booking purposes. Every show has a "last verified" date which can be updated by anyone, solving the problem of so many other web sites where show listings get stale very quickly (since shows come and go so frequently).  There are multiple views including a map view built with Google Maps API.</p>
+<i class='fa fa-external-link fa-1x'></i>
+<%= link_to "app", "http://stalemikes.com", :class => "project-link" %>
+<i class='fa fa-github-square fa-1x'></i>
+<%= link_to "code", "https://github.com/anymd/stalemikes", :class => "project-link" %>
+<p>Gems: gmaps4rails, masonry, filepicker, active_enum, simple_form, sass, jquery, coffeescriptm, onmiauth-facebook, postgres</p>
+<hr>
+
+<h3>Devbootstream</h3>
+<p>For my final project at Dev Bootcamp, my group of four built out an idea I had to aggregate tweets, tumblr posts and Instagram photos of all Bootcamp students and staff. We incorporated the respective APIs and delivered the posts to the browser in real time using Pusher. We had background jobs running every five minutes (using Sidekiq and Redis) making API requests. For the front end we used Masonry javascript library that mimics the Pinterest layout, plus Infinite Scroll. Posts were memcached for performance. We used Textacular gem for keyword search.</p>
+<i class='fa fa-external-link fa-1x'></i>
+<%= link_to "app", "http://devbootstream.com", :class => "project-link" %>
+<i class='fa fa-github-square fa-1x'></i>
+<%= link_to "code", "https://github.com/anymd/bootstream", :class => "project-link" %>
+<p>Gems: postgres, omniauth-facebook, instagram, twitter, tweetstream, newrelic, memcache, tumblr, sidekiq, redis, textacular, pusher</p>
+<hr>
+
+<h3>Bendeveloping</h3>
+<p>I built my personal blog using Rails 4 and host it on heroku.</p>
+<i class='fa fa-external-link fa-1x'></i>
+<%= link_to "app", "http://bendeveloping.com", :class => "project-link" %>
+<i class='fa fa-github-square fa-1x'></i>
+<%= link_to "code", "https://github.com/anymd/bendeveloping", :class => "project-link" %>
+<p>Gems user: rails_12factor, unicorn, rails 4, active_attr, has_permalink</p>
+<hr>
+
+<h3>LaffQ</h3>
+<p>LaffQ is another web service I built with a business partner that allows working comedians to easily list and promote their performance schedules online.  I did the front-end coding (but NOT the final design, although I made the logo).  It was built in Python using the Django framework.  I no longer own the rights to the code but you can view the service live.</p>
+<i class='fa fa-external-link fa-1x'></i>
+<%= link_to "app", "http://laffq.com", :class => "project-link" %>
+<hr>
+
+<h3>CosmicWish</h3>
+<p>CosmicWish was an online service I built with two business partners that allowed users to design their own greeting card to be printed professionally and mailed to a recipient for any occasion, and the personal message included on the card would also be beamed into space via satellite for novelty purposes. <br><br>The service is no longer available online and I no longer have rights to the code but 
+<%= link_to "here are some screenshots", "http://benfeldman.carbonmade.com/projects/4926046#7" %>.</p>
